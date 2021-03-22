@@ -6,7 +6,6 @@ class BaseADDataset(ABC):
     """Anomaly detection dataset base class."""
 
     def __init__(self, root: str):
-        super().__init__()
         self.root = root  # root path to data
 
         self.n_classes = 2  # 0: normal, 1: outlier
